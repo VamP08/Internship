@@ -21,10 +21,10 @@ def read_csv(file_path: str) -> list[Row]:
         for row in reader:
             rows.append(
                 Row(
-                    float(row["Delivery Distance (km)"]),
-                    int(row["Number of Items"]),
-                    row["Time of Day"],
-                    int(row["Actual Delivery Time (min)"]),
+                    distance=float(row["Delivery Distance (km)"]),
+                    items_count=int(row["Number of Items"]),
+                    time_of_day=row["Time of Day"],
+                    delivery_time=int(row["Actual Delivery Time (min)"]),
                 )
             )
 
