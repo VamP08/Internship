@@ -4,7 +4,7 @@ from typing import Dict, List
 
 import pytest
 
-from week1.csv_parser import Row, read_csv
+from week1.csv_parser import read_csv
 
 
 def make_sample_csv(path: Path) -> List[Dict[str, str]]:
